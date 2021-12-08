@@ -472,3 +472,19 @@ nav .menu ul li a:hover::after {
   object-fit: cover;
   clip-path: circle();
 }
+
+/* swiper */
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
