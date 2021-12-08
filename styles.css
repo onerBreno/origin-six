@@ -299,3 +299,46 @@ nav .menu ul li a:hover::after {
   border-radius: 4px;
   background: var(--base-color-second);
 }
+
+/* --- About --- */
+#about {
+  display: flex;
+  gap: 4rem;
+}
+
+#about > .image {
+  position: relative;
+}
+
+#about > .image > img {
+  position: relative;
+  border-radius: 4px;
+}
+
+#about > .image::before {
+  content: '';
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+
+  width: 561px;
+  height: 375px;
+
+  border-radius: 4px;
+  background: var(--base-color-second);
+}
+
+#about > .text {
+  margin-top: 0.875rem;
+  width: 610px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#about > .text > p {
+  font-size: 16px;
+  color: var(--text-gray);
+  word-wrap: break-word;
+}
