@@ -409,3 +409,66 @@ nav .menu ul li a:hover::after {
 .card .title {
   font-size: 1.5rem;
 }
+
+/* --- Testimonials --- */
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#testimonials header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* width: 400px; */
+}
+
+#testimonials .testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#testimonials .testimonial {
+  /* display: flex; */
+  width: 544px;
+  padding: 3.25rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#testimonials p {
+  position: relative;
+  color: var(--title-color);
+  font: 400 1rem 'DM Sans', sans-serif;
+  text-indent: 1.875rem;
+}
+
+#testimonials span {
+  font: 400 2.5rem serif;
+  top: -0.375rem;
+  left: -1.8rem;
+  position: absolute;
+  /* font-size: 48px; */
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+}
