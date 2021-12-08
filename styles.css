@@ -342,3 +342,70 @@ nav .menu ul li a:hover::after {
   color: var(--text-gray);
   word-wrap: break-word;
 }
+
+/* --- Services --- */
+
+#services {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+#services header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#services header p {
+  width: 523px;
+  text-align: center;
+  font: 400 18px 'DM Sans', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+#services header p strong {
+  font: 700 18px 'DM Sans', sans-serif;
+  color: var(--base-color);
+}
+
+#services .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 352px);
+  gap: 2rem;
+}
+
+#services .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.6rem 3rem;
+  text-align: center;
+
+  box-shadow: 0px 0px 12px 0px #00000014;
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  transition: transform 0.4s;
+}
+
+#services .card:hover {
+  transform: scale(1.03);
+}
+
+#services .card h2 {
+  margin-bottom: 1rem;
+}
+
+.card .icon {
+  color: var(--base-color);
+  font-size: 4.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.card .title {
+  font-size: 1.5rem;
+}
