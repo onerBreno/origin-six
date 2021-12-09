@@ -15,18 +15,34 @@ for (const link of links) {
   })
 }
 
-const header = document.querySelector('#header')
-const headerHeight = header.offsetHeight
+// shadow header when scroll
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const headerHeight = header.offsetHeight
 
-window.addEventListener('scroll', function () {
   if (window.scrollY >= headerHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
+}
+
+// back to top
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+  if (window.scrollY >= 600) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
 })
 
-// swiper
+// plugin swiper for carousel
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   pagination: {
@@ -42,7 +58,7 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-// scrollreveal
+// scrollreveal show elements when scroll on page
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',

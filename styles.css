@@ -550,7 +550,7 @@ footer .container {
   align-items: center;
 }
 
-footer .text {
+footer .brand {
   color: var(--text-color-light);
   display: flex;
 
@@ -560,11 +560,11 @@ footer .text {
 footer .logo {
   margin-bottom: 1.5rem;
 }
-footer .logo span {
+.logo-alt span {
   color: var(--body-color);
 }
 
-footer .text p:nth-of-type(1) {
+footer .brand p:nth-of-type(1) {
   margin-bottom: 0.75rem;
 }
 footer .socialMedias {
@@ -575,4 +575,35 @@ footer .socialMedias {
 footer .socialMedias i {
   font-size: 1.25rem;
   color: var(--text-color-light);
+  display: inline-block;
+  transition: 0.3s;
+}
+footer .socialMedias i:hover {
+  transform: scale(1.4);
+}
+
+/* --- Back to top --- */
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  background: var(--base-color);
+
+  visibility: hidden;
+  opacity: 0;
+  display: inline-block;
+  transition: 0.3s;
+  transform: translateY(15px);
+}
+
+.back-to-top.show {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
 }
